@@ -1,8 +1,7 @@
 "use strict";
 exports.__esModule = true;
 var StringManipulations = /** @class */ (function () {
-    function StringManipulations() {
-    }
+    function StringManipulations() {}
     StringManipulations.prototype.print = function (word) {
         var str = "Kumar";
         console.log("Word is : " + word);
@@ -36,14 +35,12 @@ var StringManipulations = /** @class */ (function () {
     return StringManipulations;
 }());
 var NumbersManipulations = /** @class */ (function () {
-    function NumbersManipulations() {
-    }
+    function NumbersManipulations() {}
     NumbersManipulations.prototype.findPrime = function (num) {
         var isPrime = true;
         if (num === 1) {
             console.log("Number is neither prime nor composite ");
-        }
-        else {
+        } else {
             for (var i = 2; i < num; i++) {
                 if (num % i == 0) {
                     isPrime = false;
@@ -52,8 +49,7 @@ var NumbersManipulations = /** @class */ (function () {
             }
             if (isPrime) {
                 console.log("Prime Number");
-            }
-            else {
+            } else {
                 console.log("Not Prime Number");
             }
         }
@@ -61,8 +57,7 @@ var NumbersManipulations = /** @class */ (function () {
     NumbersManipulations.prototype.findMagic = function (num) {
         if (num % 9 === 1) {
             console.log("Magic Number");
-        }
-        else {
+        } else {
             console.log("Not a Magic Number");
         }
     };
@@ -70,8 +65,8 @@ var NumbersManipulations = /** @class */ (function () {
 }());
 var obj = new StringManipulations();
 obj.print("Kundan");
-obj.printWithSpace("Hippopotamius");
+obj.printWithSpace("hippopotamus");
 obj.findVowel("mercury");
 var obj1 = new NumbersManipulations();
-obj1.findPrime(5);
+obj1.findPrime(4);
 obj1.findMagic(199);
